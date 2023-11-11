@@ -1,0 +1,29 @@
+.contenedorPadre {
+    button {
+        border: none;
+        background-color: #2f2e2e;
+        margin-top: 15px;
+        color: white;
+        padding: 7px;
+        border-radius: 10px;
+
+        &:hover{
+            background-color: rgb(32, 32, 32);
+        }
+    }
+    .contenedorInput {
+        display: flex;
+        gap: 10px;
+        margin: 0;
+        input {
+            width: 100%;
+            background-color: transparent;
+            padding: 10px;
+            border: 1px solid rgb(154, 154, 154);
+            margin-top: 20px;
+            border-radius: 15px;
+            max-width: 1500px;
+            color: white;
+        }
+    }
+}
