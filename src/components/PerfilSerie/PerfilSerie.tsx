@@ -28,9 +28,6 @@ const PerfilSerie = (props: PerfilProps) => {
             if (docSnap.exists()) {
                 const serieObtenida = docSnap.data() as PracticaHooks;
                 setSerie(serieObtenida);
-                console.log(params.id, "ESTE ES EL ID DEL DOCUMENTO");
-            } else {
-                console.log(params.id, "ESTE ES EL ID DEL DOCUMENTO");
             }
         } catch {}
     };
@@ -45,7 +42,6 @@ const PerfilSerie = (props: PerfilProps) => {
                 {serie ? (
                     <div>
                         <div>
-                            {/* <img src={serie?.image} alt="" /> */}
                             <img src={serie?.imagePerfil} alt="" />
                             <h1>{serie?.name}</h1>
                             <div

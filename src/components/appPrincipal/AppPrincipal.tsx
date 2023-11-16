@@ -31,16 +31,13 @@ const AppPrincipal = () => {
     const obtenerPracticaHooks = () => {
         getDocs(practicaHooksCollection)
             .then((data) => {
-                console.log("DATA RESULT : ", data);
                 const values = data.docs.map((doc) => ({
                     ...(doc.data() as PracticaHooks),
                     id: doc.id,
                 }));
-                console.log("id cargados:", values);
                 setSerie(values);
             })
             .catch((error) => {
-                console.log("ERROR: ", error);
             });
     };
     useEffect(() => {
